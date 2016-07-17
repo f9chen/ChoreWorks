@@ -14,6 +14,15 @@
 		8BD819DD1D3ABD370054CD5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BD819DB1D3ABD370054CD5E /* LaunchScreen.storyboard */; };
 		8BD819E81D3ABD370054CD5E /* ChoreWorksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD819E71D3ABD370054CD5E /* ChoreWorksTests.swift */; };
 		8BD819F31D3ABD370054CD5E /* ChoreWorksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD819F21D3ABD370054CD5E /* ChoreWorksUITests.swift */; };
+		8BD81A031D3BC9D00054CD5E /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD81A021D3BC9D00054CD5E /* HomeTableViewController.swift */; };
+		8BD81A071D3BCA400054CD5E /* Chore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD81A061D3BCA400054CD5E /* Chore.swift */; };
+		8BD81A091D3BCD220054CD5E /* ChoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD81A081D3BCD220054CD5E /* ChoreTableViewCell.swift */; };
+		8BD81A0B1D3BCD310054CD5E /* ChoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BD81A0A1D3BCD310054CD5E /* ChoreTableViewCell.xib */; };
+		8BD81A0D1D3C02DD0054CD5E /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD81A0C1D3C02DD0054CD5E /* Utility.swift */; };
+		8BD81A101D3C0BAB0054CD5E /* CreateNewChoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD81A0F1D3C0BAB0054CD5E /* CreateNewChoreViewController.swift */; };
+		8BD81A121D3C0CCB0054CD5E /* ChoreFrequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD81A111D3C0CCB0054CD5E /* ChoreFrequency.swift */; };
+		8BD81A161D3C19530054CD5E /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD81A151D3C19530054CD5E /* UIButton+.swift */; };
+		8BD81A181D3C1A330054CD5E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD81A171D3C1A330054CD5E /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +56,15 @@
 		8BD819EE1D3ABD370054CD5E /* ChoreWorksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChoreWorksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD819F21D3ABD370054CD5E /* ChoreWorksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreWorksUITests.swift; sourceTree = "<group>"; };
 		8BD819F41D3ABD370054CD5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BD81A021D3BC9D00054CD5E /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeTableViewController.swift; path = Screens/Home/HomeTableViewController.swift; sourceTree = "<group>"; };
+		8BD81A061D3BCA400054CD5E /* Chore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Chore.swift; path = Models/Chore.swift; sourceTree = "<group>"; };
+		8BD81A081D3BCD220054CD5E /* ChoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChoreTableViewCell.swift; path = Screens/Home/ChoreTableViewCell.swift; sourceTree = "<group>"; };
+		8BD81A0A1D3BCD310054CD5E /* ChoreTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChoreTableViewCell.xib; path = Screens/Home/ChoreTableViewCell.xib; sourceTree = "<group>"; };
+		8BD81A0C1D3C02DD0054CD5E /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = Infra/Utility.swift; sourceTree = "<group>"; };
+		8BD81A0F1D3C0BAB0054CD5E /* CreateNewChoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateNewChoreViewController.swift; path = Screens/New/CreateNewChoreViewController.swift; sourceTree = "<group>"; };
+		8BD81A111D3C0CCB0054CD5E /* ChoreFrequency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChoreFrequency.swift; path = Models/ChoreFrequency.swift; sourceTree = "<group>"; };
+		8BD81A151D3C19530054CD5E /* UIButton+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIButton+.swift"; path = "Infra/UIButton+.swift"; sourceTree = "<group>"; };
+		8BD81A171D3C1A330054CD5E /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Colors.swift; path = Infra/Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +115,9 @@
 		8BD819D11D3ABD370054CD5E /* ChoreWorks */ = {
 			isa = PBXGroup;
 			children = (
+				8BD81A051D3BCA180054CD5E /* Models */,
+				8BD81A041D3BCA0F0054CD5E /* Infra */,
+				8BD81A001D3BC9A40054CD5E /* Screens */,
 				8BD819D21D3ABD370054CD5E /* AppDelegate.swift */,
 				8BD819D41D3ABD370054CD5E /* ViewController.swift */,
 				8BD819D61D3ABD370054CD5E /* Main.storyboard */,
@@ -123,6 +144,52 @@
 				8BD819F41D3ABD370054CD5E /* Info.plist */,
 			);
 			path = ChoreWorksUITests;
+			sourceTree = "<group>";
+		};
+		8BD81A001D3BC9A40054CD5E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				8BD81A0E1D3C0B780054CD5E /* New */,
+				8BD81A011D3BC9AD0054CD5E /* Home */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		8BD81A011D3BC9AD0054CD5E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8BD81A021D3BC9D00054CD5E /* HomeTableViewController.swift */,
+				8BD81A081D3BCD220054CD5E /* ChoreTableViewCell.swift */,
+				8BD81A0A1D3BCD310054CD5E /* ChoreTableViewCell.xib */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		8BD81A041D3BCA0F0054CD5E /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				8BD81A0C1D3C02DD0054CD5E /* Utility.swift */,
+				8BD81A151D3C19530054CD5E /* UIButton+.swift */,
+				8BD81A171D3C1A330054CD5E /* Colors.swift */,
+			);
+			name = Infra;
+			sourceTree = "<group>";
+		};
+		8BD81A051D3BCA180054CD5E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8BD81A061D3BCA400054CD5E /* Chore.swift */,
+				8BD81A111D3C0CCB0054CD5E /* ChoreFrequency.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8BD81A0E1D3C0B780054CD5E /* New */ = {
+			isa = PBXGroup;
+			children = (
+				8BD81A0F1D3C0BAB0054CD5E /* CreateNewChoreViewController.swift */,
+			);
+			name = New;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +299,7 @@
 				8BD819DD1D3ABD370054CD5E /* LaunchScreen.storyboard in Resources */,
 				8BD819DA1D3ABD370054CD5E /* Assets.xcassets in Resources */,
 				8BD819D81D3ABD370054CD5E /* Main.storyboard in Resources */,
+				8BD81A0B1D3BCD310054CD5E /* ChoreTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +324,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BD81A101D3C0BAB0054CD5E /* CreateNewChoreViewController.swift in Sources */,
+				8BD81A031D3BC9D00054CD5E /* HomeTableViewController.swift in Sources */,
+				8BD81A121D3C0CCB0054CD5E /* ChoreFrequency.swift in Sources */,
 				8BD819D51D3ABD370054CD5E /* ViewController.swift in Sources */,
+				8BD81A161D3C19530054CD5E /* UIButton+.swift in Sources */,
+				8BD81A0D1D3C02DD0054CD5E /* Utility.swift in Sources */,
 				8BD819D31D3ABD370054CD5E /* AppDelegate.swift in Sources */,
+				8BD81A071D3BCA400054CD5E /* Chore.swift in Sources */,
+				8BD81A091D3BCD220054CD5E /* ChoreTableViewCell.swift in Sources */,
+				8BD81A181D3C1A330054CD5E /* Colors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +558,7 @@
 				8BD819F91D3ABD370054CD5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BD819FA1D3ABD370054CD5E /* Build configuration list for PBXNativeTarget "ChoreWorksTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +567,7 @@
 				8BD819FC1D3ABD370054CD5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BD819FD1D3ABD370054CD5E /* Build configuration list for PBXNativeTarget "ChoreWorksUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +576,7 @@
 				8BD819FF1D3ABD370054CD5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
