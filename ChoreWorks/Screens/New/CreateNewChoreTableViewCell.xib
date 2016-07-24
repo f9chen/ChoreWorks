@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="126" id="qso-Vg-Oe0" customClass="CreateNewChoreTableViewCell" customModule="ChoreWorks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="126"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qso-Vg-Oe0" id="rVt-sv-ggb">
+                <rect key="frame" x="0.0" y="0.0" width="448" height="125.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Chore Name, e.g. Take out trash" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iON-7L-qbX">
+                        <rect key="frame" x="10" y="48" width="312.5" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cmm-Q1-LL3">
+                        <rect key="frame" x="332.5" y="10" width="105.5" height="105.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="cmm-Q1-LL3" secondAttribute="height" multiplier="1:1" id="kAT-Fx-jcs"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iON-7L-qbX" firstAttribute="centerY" secondItem="rVt-sv-ggb" secondAttribute="centerY" id="0C0-8W-5OD"/>
+                    <constraint firstItem="cmm-Q1-LL3" firstAttribute="top" secondItem="rVt-sv-ggb" secondAttribute="top" constant="10" id="8jf-w3-zdJ"/>
+                    <constraint firstAttribute="trailing" secondItem="cmm-Q1-LL3" secondAttribute="trailing" constant="10" id="ALr-QN-Dnr"/>
+                    <constraint firstAttribute="bottom" secondItem="cmm-Q1-LL3" secondAttribute="bottom" constant="10" id="c6H-D4-zN7"/>
+                    <constraint firstItem="cmm-Q1-LL3" firstAttribute="leading" secondItem="iON-7L-qbX" secondAttribute="trailing" constant="10" id="nva-qC-zdW"/>
+                    <constraint firstItem="iON-7L-qbX" firstAttribute="leading" secondItem="rVt-sv-ggb" secondAttribute="leading" constant="10" id="xzg-LX-RL6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="choreImageView" destination="cmm-Q1-LL3" id="5de-No-LzC"/>
+                <outlet property="nameInputTextField" destination="iON-7L-qbX" id="WgX-fs-pvE"/>
+            </connections>
+            <point key="canvasLocation" x="157" y="371"/>
+        </tableViewCell>
+    </objects>
+</document>

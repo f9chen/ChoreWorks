@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BC4FA0A1D3C3DEB008C32C9 /* CreateNewChoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BC4FA091D3C3DEB008C32C9 /* CreateNewChoreTableViewCell.xib */; };
+		8BC4FA0C1D3C3EAA008C32C9 /* CreateNewChoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC4FA0B1D3C3EAA008C32C9 /* CreateNewChoreTableViewCell.swift */; };
+		8BC4FA0E1D3D35E0008C32C9 /* CategoryChooserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC4FA0D1D3D35E0008C32C9 /* CategoryChooserTableViewController.swift */; };
+		8BC4FA101D3D37A7008C32C9 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC4FA0F1D3D37A7008C32C9 /* UIViewController+.swift */; };
 		8BD819D31D3ABD370054CD5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD819D21D3ABD370054CD5E /* AppDelegate.swift */; };
 		8BD819D51D3ABD370054CD5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD819D41D3ABD370054CD5E /* ViewController.swift */; };
 		8BD819D81D3ABD370054CD5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BD819D61D3ABD370054CD5E /* Main.storyboard */; };
@@ -43,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8BC4FA091D3C3DEB008C32C9 /* CreateNewChoreTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreateNewChoreTableViewCell.xib; path = Screens/New/CreateNewChoreTableViewCell.xib; sourceTree = "<group>"; };
+		8BC4FA0B1D3C3EAA008C32C9 /* CreateNewChoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateNewChoreTableViewCell.swift; path = Screens/New/CreateNewChoreTableViewCell.swift; sourceTree = "<group>"; };
+		8BC4FA0D1D3D35E0008C32C9 /* CategoryChooserTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryChooserTableViewController.swift; path = Screens/New/CategoryChooserTableViewController.swift; sourceTree = "<group>"; };
+		8BC4FA0F1D3D37A7008C32C9 /* UIViewController+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+.swift"; path = "Infra/UIViewController+.swift"; sourceTree = "<group>"; };
 		8BD819CF1D3ABD370054CD5E /* ChoreWorks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChoreWorks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD819D21D3ABD370054CD5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BD819D41D3ABD370054CD5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +179,7 @@
 				8BD81A0C1D3C02DD0054CD5E /* Utility.swift */,
 				8BD81A151D3C19530054CD5E /* UIButton+.swift */,
 				8BD81A171D3C1A330054CD5E /* Colors.swift */,
+				8BC4FA0F1D3D37A7008C32C9 /* UIViewController+.swift */,
 			);
 			name = Infra;
 			sourceTree = "<group>";
@@ -188,6 +197,9 @@
 			isa = PBXGroup;
 			children = (
 				8BD81A0F1D3C0BAB0054CD5E /* CreateNewChoreViewController.swift */,
+				8BC4FA091D3C3DEB008C32C9 /* CreateNewChoreTableViewCell.xib */,
+				8BC4FA0B1D3C3EAA008C32C9 /* CreateNewChoreTableViewCell.swift */,
+				8BC4FA0D1D3D35E0008C32C9 /* CategoryChooserTableViewController.swift */,
 			);
 			name = New;
 			sourceTree = "<group>";
@@ -300,6 +312,7 @@
 				8BD819DA1D3ABD370054CD5E /* Assets.xcassets in Resources */,
 				8BD819D81D3ABD370054CD5E /* Main.storyboard in Resources */,
 				8BD81A0B1D3BCD310054CD5E /* ChoreTableViewCell.xib in Resources */,
+				8BC4FA0A1D3C3DEB008C32C9 /* CreateNewChoreTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,14 +339,17 @@
 			files = (
 				8BD81A101D3C0BAB0054CD5E /* CreateNewChoreViewController.swift in Sources */,
 				8BD81A031D3BC9D00054CD5E /* HomeTableViewController.swift in Sources */,
+				8BC4FA0E1D3D35E0008C32C9 /* CategoryChooserTableViewController.swift in Sources */,
 				8BD81A121D3C0CCB0054CD5E /* ChoreFrequency.swift in Sources */,
 				8BD819D51D3ABD370054CD5E /* ViewController.swift in Sources */,
 				8BD81A161D3C19530054CD5E /* UIButton+.swift in Sources */,
 				8BD81A0D1D3C02DD0054CD5E /* Utility.swift in Sources */,
 				8BD819D31D3ABD370054CD5E /* AppDelegate.swift in Sources */,
 				8BD81A071D3BCA400054CD5E /* Chore.swift in Sources */,
+				8BC4FA101D3D37A7008C32C9 /* UIViewController+.swift in Sources */,
 				8BD81A091D3BCD220054CD5E /* ChoreTableViewCell.swift in Sources */,
 				8BD81A181D3C1A330054CD5E /* Colors.swift in Sources */,
+				8BC4FA0C1D3C3EAA008C32C9 /* CreateNewChoreTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

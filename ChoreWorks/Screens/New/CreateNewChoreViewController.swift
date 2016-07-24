@@ -8,56 +8,90 @@
 
 import UIKit
 
-class CreateNewChoreViewController: UIViewController {
-
-    @IBOutlet weak var frequencyPickerView: UIPickerView!
-    @IBOutlet weak var CTAButton: UIButton!
+class CreateNewChoreViewController: UITableViewController {
 
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
 
         super.viewDidLoad()
-        setupUI()
-        setupPickerView()
+        setupTableView()
     }
-    
+
     // MARK: - Setup
-    private func setupUI() {
+    private func setupTableView() {
 
-        CTAButton.style()
-    }
-
-    private func setupPickerView() {
-
-        frequencyPickerView.dataSource = self
-        frequencyPickerView.delegate = self
-    }
-
-
-    @IBAction func didTapCTA(sender: AnyObject) {
-
-        self.dismissViewControllerAnimated(true, completion: nil)
+        tableView.registerNib(UINib(nibName: String(CreateNewChoreTableViewCell), bundle: NSBundle.mainBundle()), forCellReuseIdentifier: String(CreateNewChoreTableViewCell))
     }
 }
 
-extension CreateNewChoreViewController: UIPickerViewDelegate {
+// MARK: - UITableViewDataSource
+extension CreateNewChoreViewController {
 
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        return ChoreFrequency.fromHashValue(row)?.rawValue
+        switch section {
+        case 0: return 1
+        case 1: return 2
+        default: return 0
+        }
+    }
+
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+
+        let cell = UITableViewCell()
+
+        switch indexPath.section {
+        case 0:
+            let createNewChoreCell = tableView.dequeueReusableCellWithIdentifier(String(CreateNewChoreTableViewCell)) as! CreateNewChoreTableViewCell
+            return createNewChoreCell
+        case 1:
+            switch indexPath.row {
+            case 0:
+                cell.textLabel?.text = "Pick a category"
+            case 1:
+                cell.textLabel?.text = "Set the frequency of the chore"
+            default: return cell
+            }
+            return cell
+        default: return cell
+        }
+    }
+
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+
+        return 2
+    }
+
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+
+        switch section {
+        case 0: return ""
+        case 1: return "Chore Details"
+        default: return ""
+        }
     }
 }
 
-extension CreateNewChoreViewController: UIPickerViewDataSource {
+// MARK: - UITableViewDelegate
+extension CreateNewChoreViewController {
 
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
 
-        return 1
+        switch indexPath.section {
+        case 0: return CreateNewChoreTableViewCell.kChoreTableViewCellHeight
+        default: return 44
+        }
     }
 
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    override func selectRowAtIndexPath(indexPath: NSIndexPath?, animated: Bool, scrollPosition: UITableViewScrollPosition) {
 
-        return ChoreFrequency.count
+        switch section {
+        case 0:
+            //
+            case 1
+        default:
+            <#code#>
+        }
     }
 }
